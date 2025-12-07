@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+}
+
+:root{
+    --HEADER_BG_COLOR: #212021;
+    --LOGO_COLOR: #54AFF5;
+    --GENERIC_TEXT_COLOR: #EAEAEA;
+    --BTTN_COLOR: #54AFF5;
+    --FEATURES_SC_COLOR: #212021;
+}
+
+/* header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 80px;
+    background-color: var(--HEADER_BG_COLOR);
+    color: var(--LOGO_COLOR);
+    height: auto;
+}
+
+header a{
+    color: var(--LOGO_COLOR);
+}
+
+ul, li, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-left: 20px
+} */
+
+@media(max-width: 430px){
+
+    html{
+        scroll-behavior: smooth;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 8.5px 20px;
+        background-color: var(--HEADER_BG_COLOR);
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    header a{
+    color: var(--LOGO_COLOR);
+    text-decoration: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .herosection{
+        background-image: url(/img/heroimage.png);
+        height: 100vh;
+        display: flex;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        color: var(--GENERIC_TEXT_COLOR);
+        gap: 16.5px;
+    }
+
+    .subscribenow {
+        color: var(--GENERIC_TEXT_COLOR);
+        background-color: transparent;
+        border: 2px solid var(--BTTN_COLOR);
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .feautures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: var(--FEATURES_SC_COLOR);
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-bottom: 20px;
+        background-color: #d9d9d92f;
+        border-radius: 10px;
+        padding: 20px;
+        gap: 10px;
+        width: 65vw;
+        height: auto;
+        color: var(--GENERIC_TEXT_COLOR)
+    }
+
+    .card img{
+        width: 55vw;
+        height: auto;
+    }
+}
