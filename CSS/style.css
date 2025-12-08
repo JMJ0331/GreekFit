@@ -11,9 +11,11 @@
     --HEADER_BG_COLOR: #212021;
     --LOGO_COLOR: #54AFF5;
     --GENERIC_TEXT_COLOR: #EAEAEA;
+    --GENERIC_DARK_COLOR: #191919;
     --BTTN_COLOR: #54AFF5;
     --FEATURES_SC_BG_COLOR: #212021;
     --HISTORY_SC_BG_COLOR: #131313;
+    --PLANPRICING_SC_BG_COLOR: #212021;
     --GENERIC_TEXT_S_SIZE: 14px;
 }
 
@@ -91,6 +93,7 @@ nav ul li{
         border: 2px solid var(--BTTN_COLOR);
         padding: 20px 40px;
         border-radius: 10px;
+        font-size: var(--GENERIC_TEXT_S_SIZE);
     }
 
     .feautures{
@@ -148,6 +151,7 @@ nav ul li{
         border: 2px solid var(--BTTN_COLOR);
         padding: 20px 40px;
         border-radius: 10px;
+        font-size: var(--GENERIC_TEXT_S_SIZE);
     }
 
     .history p{
@@ -157,5 +161,61 @@ nav ul li{
     .aboutus img{
         width: 70%;
         height: auto;
+    }
+
+    .planpricing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: var(--PLANPRICING_SC_BG_COLOR);
+        color: var(--GENERIC_TEXT_COLOR);
+    }
+     
+    .planspan, .bestplan{
+        color: #54AFF5;
+    }
+
+    .pricingTable{
+        background-color: #54AFF5;
+        border: 2px solid #54AFF5;
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .subscribenowTable {
+        color: var(--GENERIC_DARK_COLOR);
+        font-weight: bold;
+        background-color: var(--BTTN_COLOR);
+        border: 2px solid var(--BTTN_COLOR);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: var(--GENERIC_TEXT_S_SIZE);
+    }
+
+    .socialmedias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--GENERIC_TEXT_S_SIZE);
+        background-color: var(--HISTORY_SC_BG_COLOR);
+        color: var(--GENERIC_TEXT_COLOR);
+        padding: 10px;
+    }
+
+    .socialmedias img {
+        width: 14px;
+        height: auto;
+    }
+
+    .rightsreserved{
+        text-align: center;
+        padding: 4px;
+        font-size: var(--GENERIC_TEXT_S_SIZE);
+        background-color: var(--FEATURES_SC_BG_COLOR);
+        color: var(--GENERIC_TEXT_COLOR)
     }
 }
