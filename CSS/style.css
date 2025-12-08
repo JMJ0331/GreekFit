@@ -216,6 +216,9 @@ nav ul li{
         padding: 4px;
         font-size: var(--GENERIC_TEXT_S_SIZE);
         background-color: var(--FEATURES_SC_BG_COLOR);
-        color: var(--GENERIC_TEXT_COLOR)
+        color: var(--GENERIC_TEXT_COLOR);
+        bottom: 0;
+        position: relative;
+        width: 100%;
     }
 }
